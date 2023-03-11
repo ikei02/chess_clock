@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="text-center">
+    <h1>対局時計</h1>
+    <p>将棋やチェスなど色々なゲームをするときに使える時計です</p>
+  </div>
+  
+  
+  <h2>設定</h2>
+  <ul>
+    <li>
+      <input type="checkbox" id="soundOptionCheck">音をつけるか</input>
+    </li>
+    <li>
+      <input type="checkbox" id="additionalSecondsCheck" onchange="onCheckAdditionalSecondsCheck()">追加秒数をつけるか</input>
+      <input id="additionalSecondsNumber" class="num-input" type="number" min="1"  disabled>
+    </li>
+    <li>
+      <input type="checkbox" id="countDownCheck" onchange="onCheckCountDownSecondsCheck()">秒読みをつけるか</input>
+      <input id="countDownNumber" class="num-input" type="number" min="1"  disabled>
+    </li>
+    <li>
+      <label for="firstAttackTimeInput" >先行の初期持ち時間(分)</label>
+      <input type="number" class="num-input" id="firstAttackTimeInput" min="1" value="15">
+    </li>
+    <li>
+      <label for="secondAttackTimeInput">後攻の初期持ち時間(分)</label>
+      <input type="number" class="num-input" id="secondAttackTimeInput" min="1"  value="15">
+    </li>
+  </ul>
+  
+  <button id="startButton" onclick="onClickStart()">対局開始</button>
+  <script src="index.js"></script>
+  
+</body>
+</html>

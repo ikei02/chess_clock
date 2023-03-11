@@ -1,0 +1,24 @@
+body{
+  background-color: lightblue;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+#startButton{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-center {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.num-input {
+  width: 60px;
+}

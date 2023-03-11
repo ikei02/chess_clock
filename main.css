@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-content{
+  width:100%;
+  display:inline-block;
+  font-size:0;
+  position:absolute;
+}
+
+.player-side{
+  display:inline-block;
+  width: 50%;
+  height: 100svh;
+  font-size:0;
+  text-align:center;
+}
+
+.time-left{
+  font-size:25vh;
+  line-height:100svh;
+  display: block;
+}
+
+.menu-btn{
+  position:absolute;
+  border-radius:50%;
+  top:10px;
+  font-size:30px;
+  left:calc(50% - 25px);
+  height:50px;
+  width:50px;
+}
+
+.menu-btn:hover{
+  background-color:lightgray;
+}
+
+.revolution-btn{
+  position:absolute;
+  border-radius:50%;
+  top:calc(100svh - 60px);
+  font-size:30px;
+  left:calc(50% - 25px);
+  height:50px;
+  width:50px;
+}
+
+.revolution-btn:hover{
+  background-color:lightgray;
+}
+
+.menu-modal{
+  width: 300px;
+  height:200px;
+  position:absolute;
+  top:calc(50% - 100px);
+  left:calc(50% - 150px);
+  background-color:white;
+  text-align:center;
+}
+
+.close-btn{
+  background-color:red;
+  position:inherit;
+  top:5px;
+  right:5px;
+  width:16px;
+}
+
+.close-btn:hover{
+  background-color:crimson;
+  
+}
+
+.hide{
+  display:none;
+}
+
+.revolution{
+  transform: rotate(90deg);
+}
+
+#left-time-text{
+  animation:1s linear;
+}
+
