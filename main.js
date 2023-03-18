@@ -58,13 +58,13 @@ revolutionBtn.onclick = function(){
 
 let leftPlayer = {
   time:10,
-  additionalCheckOption:true,
+  additionalCheckOption:false,
   additionalCheckSeconds:5,
 }
 
 let rightPlayer = {
   time:10,
-  additionalCheckOption:true,
+  additionalCheckOption:false,
   additionalCheckSeconds:5,
 }
 let status = "left"
