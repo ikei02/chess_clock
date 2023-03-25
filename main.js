@@ -8,6 +8,8 @@ originParams.forEach(p => {
 });
 console.log(params)
 
+
+
 const menuBtn =  document.getElementsByClassName("menu-btn")[0]
 const menuModal = document.getElementsByClassName('menu-modal')[0]
 
@@ -55,16 +57,20 @@ revolutionBtn.onclick = function(){
   leftTimeText.style.setProperty("transform",`rotate(${isRevolutioning ? 90 : 0}deg)`)
   rightTimeText.style.setProperty("transform",`rotate(${isRevolutioning ? -90 : 0}deg)`)
 }
+let option = {
+  hasAdditionalTimeOption: params["adto"] === "true",
+  hasSoundOption:params["so"] === "true",
+  hasCountDownOption:["co"] === "true"
+}
 
 let leftPlayer = {
-  time:10,
+  time:parseInt(params["ft"])*60,
   additionalCheckOption:false,
   additionalCheckSeconds:5,
 }
 
 let rightPlayer = {
-  time:10,
-  additionalCheckOption:false,
+  time:parseInt(params["st"])*60,
   additionalCheckSeconds:5,
 }
 let status = "left"
